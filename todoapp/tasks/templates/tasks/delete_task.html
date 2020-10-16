@@ -1,0 +1,9 @@
+<p>Are you sure you want to delete task "{{item}}" ?</p>
+
+<a href="{% url 'list' %}">Cancel</a>
+
+<form action="" method="POST">
+  {% csrf_token %}
+  <input type="submit" name="Confirm">
+
+</form>
